@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/> <!-- icons -->
+    <script src="https://kit.fontawesome.com/521aa66753.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.js"></script> 
+    <script> 
+        $(function(){
+        $("#includeTopNav").load("topNav.html"); 
+        });
+    </script> 
+    <script> 
+        $(function(){
+        $("#includeFooter").load("footer.html"); 
+        });
+    </script> 
+  </head>
+<body>
+    <!-- Top Navigation-->
+    <div id="includeTopNav"></div>
+
+    <!-- Photo Slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides">
+                <!-- Buttons here -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!-- Slide images here -->
+                <div class="slide first">
+                    <img src="assets/keyboard.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/iphone.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/printer.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/msi.jpg" alt="">
+                </div>
+
+                <!-- Auto navigation -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- Manual navigation-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                
+                <!-- Script to auto slide -->
+                <script type="text/javascript">
+                    var counter = 1;
+                    setInterval(function(){
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if(counter > 4){
+                            counter = 1;
+                        }
+                    },5000);
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category tabs -->
+    <div class="tab-container">
+        <h2>Categories</h2>
+        <input type="radio" name="tab" checked id="phones">
+        <input type="radio" name="tab" id="accessories">
+        <input type="radio" name="tab" id="computers">
+        <input type="radio" name="tab" id="others">
+        <nav>
+            <label for="phones" class="tab-phones"><i class="fas fa-mobile-alt"></i>Telefonos</label>
+            <label for="accessories" class="tab-accessories"><i class="fas fa-keyboard"></i>Accesorios</label>
+            <label for="computers" class="tab-computers"><i class="fas fa-desktop"></i>Computadoras</label>
+            <label for="others" class="tab-others"><i class="fas fa-ellipsis-h"></i>Otros</label>
+            <div class="tab-slider"></div>
+        </nav>
+        <section>
+            <div class="content content1">
+                <div class="product-tab">
+                    <img src="assets/iphone.png" class="product-img">
+                    <a href="">New Apple iPhone 12 (128GB, Blue) [Locked] + Carrier Subscription</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/iphone.png" class="product-img">
+                    <a href="">New Apple iPhone 12 (128GB, Blue) [Locked] + Carrier Subscription</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/iphone.png" class="product-img">
+                    <a href="">New Apple iPhone 12 (128GB, Blue) [Locked] + Carrier Subscription</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/iphone.png" class="product-img">
+                    <a href="">New Apple iPhone 12 (128GB, Blue) [Locked] + Carrier Subscription</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/iphone.png" class="product-img">
+                    <a href="">New Apple iPhone 12 (128GB, Blue) [Locked] + Carrier Subscription</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/iphone.png" class="product-img">
+                    <a href="">New Apple iPhone 12 (128GB, Blue) [Locked] + Carrier Subscription</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/iphone.png" class="product-img">
+                    <a href="">New Apple iPhone 12 (128GB, Blue) [Locked] + Carrier Subscription</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/iphone.png" class="product-img">
+                    <a href="">New Apple iPhone 12 (128GB, Blue) [Locked] + Carrier Subscription</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/iphone.png" class="product-img">
+                    <a href="">New Apple iPhone 12 (128GB, Blue) [Locked] + Carrier Subscription</a>
+                    <label>$999.99</label>
+                </div>
+                <a href="">
+                <div class="product-tab-more">
+                    <div class="more">
+                        <img src="assets/plus.png" class="more-img">
+                        <img src="assets/all.png" class="more-text">
+                    </div>
+                </div></a>
+            </div>
+            <div class="content content2">
+                <div class="product-tab">
+                    <img src="assets/keyboard.png" class="product-img">
+                    <a href="">Vulcan 122 AIMO</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/keyboard.png" class="product-img">
+                    <a href="">Vulcan 122 AIMO</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/keyboard.png" class="product-img">
+                    <a href="">Vulcan 122 AIMO</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/keyboard.png" class="product-img">
+                    <a href="">Vulcan 122 AIMO</a>
+                    <label>$999.99</label>
+                </div>
+                <div class="product-tab">
+                    <img src="assets/keyboard.png" class="product-img">
+                    <a href="">Vulcan 122 AIMO</a>
+                    <label>$999.99</label>
+                </div>
+                <a href="">
+                <div class="product-tab-more">
+                    <div class="more">
+                        <img src="assets/plus.png" class="more-img">
+                        <img src="assets/all.png" class="more-text">
+                    </div>
+                </div></a>
+            </div>
+            <div class="content content3">
+                <div class="product-tab-long">
+                    <img src="assets/msi.jpg" class="product-img">
+                    <a href="">MSI Laptop Prestige 14 A10SC-231 Intel Core i7 10th Gen 10510U (1.80 GHz) 16 GB LPDDR3 Memory 512 GB NVMe SSD NVIDIA GeForce GTX 1650 Max-Q 14.0" 4K/UHD Windows 10 Pro 64-bit</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/msi.jpg" class="product-img">
+                    <a href="">MSI Laptop Prestige 14 A10SC-231 Intel Core i7 10th Gen 10510U (1.80 GHz) 16 GB LPDDR3 Memory 512 GB NVMe SSD NVIDIA GeForce GTX 1650 Max-Q 14.0" 4K/UHD Windows 10 Pro 64-bit</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/msi.jpg" class="product-img">
+                    <a href="">MSI Laptop Prestige 14 A10SC-231 Intel Core i7 10th Gen 10510U (1.80 GHz) 16 GB LPDDR3 Memory 512 GB NVMe SSD NVIDIA GeForce GTX 1650 Max-Q 14.0" 4K/UHD Windows 10 Pro 64-bit</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/msi.jpg" class="product-img">
+                    <a href="">MSI Laptop Prestige 14 A10SC-231 Intel Core i7 10th Gen 10510U (1.80 GHz) 16 GB LPDDR3 Memory 512 GB NVMe SSD NVIDIA GeForce GTX 1650 Max-Q 14.0" 4K/UHD Windows 10 Pro 64-bit</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/msi.jpg" class="product-img">
+                    <a href="">MSI Laptop Prestige 14 A10SC-231 Intel Core i7 10th Gen 10510U (1.80 GHz) 16 GB LPDDR3 Memory 512 GB NVMe SSD NVIDIA GeForce GTX 1650 Max-Q 14.0" 4K/UHD Windows 10 Pro 64-bit</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/msi.jpg" class="product-img">
+                    <a href="">MSI Laptop Prestige 14 A10SC-231 Intel Core i7 10th Gen 10510U (1.80 GHz) 16 GB LPDDR3 Memory 512 GB NVMe SSD NVIDIA GeForce GTX 1650 Max-Q 14.0" 4K/UHD Windows 10 Pro 64-bit</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/msi.jpg" class="product-img">
+                    <a href="">MSI Laptop Prestige 14 A10SC-231 Intel Core i7 10th Gen 10510U (1.80 GHz) 16 GB LPDDR3 Memory 512 GB NVMe SSD NVIDIA GeForce GTX 1650 Max-Q 14.0" 4K/UHD Windows 10 Pro 64-bit</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/msi.jpg" class="product-img">
+                    <a href="">MSI Laptop Prestige 14 A10SC-231 Intel Core i7 10th Gen 10510U (1.80 GHz) 16 GB LPDDR3 Memory 512 GB NVMe SSD NVIDIA GeForce GTX 1650 Max-Q 14.0" 4K/UHD Windows 10 Pro 64-bit</a>
+                    <label>$999.99</label>
+                </div> 
+                <a href="">
+                <div class="product-tab-more">
+                    <div class="more">
+                        <img src="assets/plus.png" class="more-img">
+                        <img src="assets/all.png" class="more-text">
+                    </div>
+                </div></a>
+            </div>
+            <div class="content content4">
+                <div class="product-tab-long">
+                    <img src="assets/printer.jpeg" class="product-img">
+                    <a href="">Canon PIXMA MG2522 Wired All-in-One Color Inkjet Printer</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/printer.jpeg" class="product-img">
+                    <a href="">Canon PIXMA MG2522 Wired All-in-One Color Inkjet Printer</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/printer.jpeg" class="product-img">
+                    <a href="">Canon PIXMA MG2522 Wired All-in-One Color Inkjet Printer</a>
+                    <label>$999.99</label>
+                </div> 
+                <div class="product-tab-long">
+                    <img src="assets/printer.jpeg" class="product-img">
+                    <a href="">Canon PIXMA MG2522 Wired All-in-One Color Inkjet Printer</a>
+                    <label>$999.99</label>
+                </div> 
+                <a href="">
+                <div class="product-tab-more">
+                    <div class="more">
+                        <img src="assets/plus.png" class="more-img">
+                        <img src="assets/all.png" class="more-text">
+                    </div>
+                </div></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div id="includeFooter"></div>
+</body>
+</html>
