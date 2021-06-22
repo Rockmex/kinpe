@@ -1,3 +1,5 @@
+/****************************************************************************/
+/******************************* General ************************************/
 :root{
     --theme-color: #403e72;
     --hover-color:rgb(63, 152, 211);
@@ -233,6 +235,141 @@ a {
 .nav-bar {
     float: left;
 }
+
+/*******************************  Footer ************************************/
+.footer{
+    background: var(--theme-color);
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.info-container{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.info-grid{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.grid{
+    float: left;
+}
+
+.leftside{
+    margin-left: 10%;
+    width: 25%;
+    padding-right: 20px;
+}
+
+.middle{
+    text-align: center;
+    /* width: 16.66667%; */
+    width: 25%;
+}
+
+.grid p{
+    /* text-align: center; */
+    line-height: 20px;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.footer-title{
+    color: rgb(63, 152, 211);
+    font-weight: bold;
+}
+
+.footer-logo{
+    width: 100px;
+    height: 80px;
+    display: block;
+}
+
+.footer-contact{
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    clear: both;
+}
+
+.footer-contact-item{
+    float: left;
+    list-style: none;
+    margin-right: 25px;
+}
+
+.footer-contact-item i{
+    color: white;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.footer-contact-item:hover i{
+    color: rgb(63, 152, 211);
+}
+
+.footer-category{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-category-title{
+    color: rgb(63, 152, 211);
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.footer-category-item{
+    list-style: none;
+}
+
+.footer-category-item:hover p{
+    color: rgb(63, 152, 211);
+}
+
+.footer-category-item p{
+    color: white;
+}
+
+/*******************************  Pagination. Source: w3school ************************************/
+.center {
+    text-align: center;
+  }
+  
+  .pagination {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  
+  .pagination a.active {
+    background-color: var(--hover-color);
+    color: white;
+    border: 1px solid var(--hover-color);
+  }
+  
+  .pagination a:hover:not(.active) {background-color: rgb(115, 212, 251);}
+
+/************************************************************************************/
+/******************************* Index.html  ****************************************/
 
 /******************************* Image slider. Source: https://www.youtube.com/watch?v=0wvrlOyGlq0&ab_channel=CodingSnow  ************************************/
 .slider-container{
@@ -475,19 +612,19 @@ section .content p{
     margin: auto;
 }
 
-section .content .product-tab a, section .content .product-tab-long a{
+.product-tab a, .product-tab-long a{
     text-align: center;
     display: block;
     color: black;
     transition: all 0.3s ease;
 }
 
-section .content .product-tab a:hover, section .content .product-tab-long a:hover{
+.product-tab a:hover,.product-tab-long a:hover{
     font-weight: bold;
     transform: scale(1.1);
 }
 
-section .content .product-tab label,section .content .product-tab-long label{
+.product-tab label,.product-tab-long label{
     padding-top: 5px;
     text-align: center;
     display: block;
@@ -520,105 +657,18 @@ section .content .product-tab label,section .content .product-tab-long label{
     font-weight: bold;
 }
 
-/*******************************  Footer ************************************/
-.footer{
-    background: var(--theme-color);
-    padding-top: 40px;
-    padding-bottom: 30px;
-    color: #fff;
-    overflow-y: auto;
-    overflow-x: hidden;
+
+
+/************************************************************************************/
+/*******************************  Telefonos.html ************************************/
+
+.img-banner{
+    width: 100%;
+    height: 300px;
 }
 
-.info-container{
-    max-width: 1170px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.info-grid{
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.grid{
-    float: left;
-}
-
-.leftside{
-    margin-left: 10%;
-    width: 25%;
-    padding-right: 20px;
-}
-
-.middle{
-    text-align: center;
-    /* width: 16.66667%; */
-    width: 25%;
-}
-
-.grid p{
-    /* text-align: center; */
-    line-height: 20px;
-    transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-}
-
-.footer-title{
-    color: rgb(63, 152, 211);
-    font-weight: bold;
-}
-
-.footer-logo{
-    width: 100px;
-    height: 80px;
-    display: block;
-}
-
-.footer-contact{
-    margin: 0;
-    padding: 0;
-    margin-top: 15px;
-    clear: both;
-}
-
-.footer-contact-item{
-    float: left;
-    list-style: none;
-    margin-right: 25px;
-}
-
-.footer-contact-item i{
-    color: white;
-    transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-}
-
-.footer-contact-item:hover i{
-    color: rgb(63, 152, 211);
-}
-
-.footer-category{
-    margin: 0;
-    padding: 0;
-}
-
-.footer-category-title{
-    color: rgb(63, 152, 211);
-    font-weight: bold;
-    padding-bottom: 3px;
-}
-
-.footer-category-item{
-    list-style: none;
-}
-
-.footer-category-item:hover p{
-    color: rgb(63, 152, 211);
-}
-
-.footer-category-item p{
-    color: white;
+.product-container{
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-bottom: 10px;
 }
