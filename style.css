@@ -239,8 +239,8 @@ a {
 /*******************************  Footer ************************************/
 .footer{
     background: var(--theme-color);
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 25px;
     color: #fff;
     overflow-y: auto;
     overflow-x: hidden;
