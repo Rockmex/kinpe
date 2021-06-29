@@ -22,11 +22,19 @@
   <div id="includeTopNav"></div>
 
   <div class="item-container">
-      <div class="item-img">
-        <img src="assets/iphone.png"/>
+      <div class="item-imgbox">
+        <a class="image-popup" href="/assets/keyboard.png"><img src="/assets/keyboard.png" class="item-img"/></a>
+        <script>
+          $(document).ready(function() {
+            $('.image-popup').magnificPopup({type:'image'});
+          });
+        </script>
       </div>
       <div class="item-info">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam voluptatibus nam deleniti nostrum consectetur cupiditate eos rerum. Assumenda at quas dolore quae nemo.</p>
+        <h3>Vulcan 122 AIMO</h3>
+        <label>Category: </label><a href="/accessories.html"><i class="fas fa-keyboard"></i><span>Accesorios</span></a>
+        <div class="item-price"><label>$999.99</label></div> 
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam voluptatibus nam deleniti nostrum consectetur cupiditate eos rerum. Assumenda at quas dolore quae nemo.</p>
       </div>
   </div>
 

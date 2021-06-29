@@ -7,15 +7,13 @@
 
 body{
     margin: 0px;
-    /* overflow-x: hidden; */
 }
 
 a {
-    /* color: #66cef6; */
     text-decoration: none;
-    /* transition: all .3s ease;
+    transition: all .3s ease;
     -moz-transition: all .3s ease;
-    -webkit-transition: all .3s ease; */
+    -webkit-transition: all .3s ease;
 }
 
 
@@ -664,11 +662,148 @@ section .content p{
 
 .img-banner{
     width: 100%;
-    height: 300px;
+    height: 260px;
 }
 
 .product-container{
     padding-top: 20px;
     padding-left: 70px;
     padding-bottom: 10px;
+}
+
+/************************************************************************************/
+/*******************************  Product.html **************************************/
+
+.item-container{
+    margin: 20px;
+    display: inline-flex;
+    min-height: 500px;
+}
+
+.item-imgbox{
+    float: left;
+    margin: 20px;
+    width: 50%;
+}
+
+.item-img{
+    max-width: 500px;
+    max-height: 560px;
+}
+
+.item-info{
+    margin: 20px;
+}
+
+.item-info label{
+    color: black;
+    font-weight: bold;
+}
+
+.item-info a{
+    margin-left: 5px;
+    color: grey;
+    font-weight: bold;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.item-info span{
+    margin-left: 5px;
+}
+
+.item-info a:hover{
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+}
+
+.item-price{
+    margin-top: 15px;
+}
+
+.item-price label{
+    font-size: x-large;
+}
+
+/************************************************************************************/
+/*******************************  Contact.html **************************************/
+
+.contact-container{
+    margin-top: 50px;
+    min-height: 300px;
+    margin-bottom: 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+.contact-box-container{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.contact-box{
+    display: inline-flex;
+    text-align: center;
+    width: 23%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headericon{
+    font-size: 46px;
+}
+
+.contact-box h5{
+    font-weight: 700;
+    font-family: "Abril Fatface";
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin: 20px auto 0;
+    color: #999999;
+}
+
+.contact-box a{
+    margin-top: 15px;
+    color: black;
+    font-size: 20px;
+
+}
+
+.contact-box a:hover{
+    color: rgb(63, 152, 211);
+}
+
+.contact-span{
+    margin-top: 15px;
+    color: black;
+    font-size: 20px;
+}
+
+.contact-social{
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    clear: both;
+}
+
+.contact-social-item{
+    display: inline;
+    list-style: none;
+    margin-right: 25px;
+}
+
+.contact-social-item i{
+    font-size: 25px;
+    color: black;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.contact-social-item:hover i{
+    color: var(--hover-color);
 }
